@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition-Case2</title>
+    <link href="assets/normalize.css" rel="stylesheet">
+    <style>
+        body>section{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-color: cornflowerblue;
+        }
+        body>section>h1 {
+            width: max-content;
+            height: max-content;
+            font-size: 50px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        section::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border: 20px solid darkgoldenrod;
+            border-radius: 100%;
+            border-top: 20px solid red;
+
+        }
+        section:hover::after{
+            transform: rotate(360deg);
+            transition: all 2s;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <h1>RWAD</h1>
+    <!--cosmetic element-->
+</section>
+</body>
+</html>

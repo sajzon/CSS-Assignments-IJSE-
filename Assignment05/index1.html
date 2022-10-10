@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple web Layout-Case 2</title>
+    <link href="assets/normalize.css" rel="stylesheet">
+    <meta name="viewport"content="width=device width,initial-scale=1">
+</head>
+     <style>
+         header{
+             height: 80px;
+             position:relative;
+             box-shadow: -2px 6px 9px -4px #917a7a;
+         }
+         header>img{
+             width:250px;
+         }
+         header>ul{
+             position:absolute;
+             right:100px;
+             top:5px;
+             list-style: none;
+
+         }
+         header>ul>li{
+             display: inline-block;
+             font-family:"Arial Black";
+             font-size:20px;
+             padding:0 10px 0 10px;
+         }
+         header>ul>li:hover{
+             cursor: pointer;
+             color: blue;
+         }
+         main{
+             position: relative;
+         }
+         main>nav{
+             width: 200px;
+             left: 0;
+             bottom: 0;
+             top: 0;
+             position: absolute;
+             background-color: blueviolet;
+         }
+         main>nav>ul{
+             position: absolute;
+             list-style: none;
+             color: white;
+             font-size: 22px;
+             margin-top: 100px;
+             left: 15px;
+         }
+         main>nav>ul>li{
+             padding-bottom: 50px;
+         }
+         main>nav>ul>li>a:hover{
+             cursor: pointer;
+             color:cornflowerblue;
+         }
+         main>nav>ul>li>a{
+             text-decoration: none;
+             color: white;
+             border-bottom: 2px solid white;
+         }
+         main>#a>section{
+             position: relative;
+             height: 300px;
+         }
+         main>#a>section>div{
+             position: absolute;
+             height: 100%;
+             width:calc(100% / 3);
+         }
+         main>#a>section>div:nth-child(1){
+             left: 0;
+             background: url("assets/coco.jpg");
+             background-size: cover;
+         }
+         main>#a>section>div:nth-child(2){
+             left: calc(100% / 3);
+             background: url("assets/train.jpg");
+             background-size: cover;
+         }
+         main>#a>section>div:nth-child(3){
+             left: calc((100% / 3)*2);
+             background: url("assets/sky.jpg");
+             background-size: cover;
+         }
+         main>#a{
+             position: relative;
+             padding: 10px;
+             margin-left: 200px;
+             min-height: 580px;
+         }
+         main>#a>section{
+             position:relative;
+         }
+         body>footer{
+             height: 70px;
+             background-color: grey;
+         }
+         body>footer>p{
+             margin-top: 0;
+             text-align: center;
+             padding: 20px;
+             font-family:"Book Antiqua";
+             font-size: 20px;
+             color: white;
+             font-weight: bold;
+         }
+
+     </style>
+<body>
+<header>
+    <img src="assets/ijselogo.png"alt="">
+    <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contact</li>
+        <li>About Us</li>
+    </ul>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><a href=""> Home</a></li>
+            <li><a herf="">Service</a><li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <section id="a">
+        <section>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <p>In the first calling method the value of x, in the sub method is not assigned to the main method x variable(Only print value of x).But the second calling method the value of x, in the sub method is assigned to the main method x variable.</p>
+        In the first calling method the value of x, in the sub method is not assigned to the main method x variable(Only print value of x).But the second calling method the value of x, in the sub method is assigned to the main method x variable.</p>
+        </p>
+        <p>In the first calling method the value of x, in the sub method is not assigned to the main method x variable(Only print value of x).But the second calling method the value of x, in the sub method is assigned to the main method x variable.</p>
+        In the first calling method the value of x, in the sub method is not assigned to the main method x variable(Only print value of x).But the second calling method the value of x, in the sub method is assigned to the main method x variable.</p>
+        </p>
+
+
+    </section>
+</main>
+<footer>
+    <p><small>Developed by IJSE 2022</small></p>
+</footer>
+</body>
+</html>

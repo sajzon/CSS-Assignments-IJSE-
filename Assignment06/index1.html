@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition-Case1</title>
+    <link href="assets/normalize.css" rel="stylesheet">
+    <style>
+        body>section{
+            position: relative;
+            background-color: darkcyan;
+            height:60px;
+            width:60px;
+            display:grid;
+            flex-direction: column;
+            margin-top: 80px;
+            box-shadow: -2px 6px 9px -4px #917a7a;
+
+        }
+        body>section>img{
+            position: absolute;
+
+            width: 50px;
+            height: 50px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        body>section>div:nth-child(2){
+            position: absolute;
+            right:130px;
+            top:17px;
+            margin: auto;
+            font-weight: bold;
+            font-size:22px;
+            color: white;
+        }
+        body>section:hover{
+            width: 300px;
+            transition-property: width;
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div>Contact</div>
+    <img src="assets/icons8-phone-50.png">
+</section>
+<section>
+    <div></div>
+    <div>Home</div>
+    <img src="assets/Home.webp">
+</section>
+<section>
+    <div></div>
+    <div>Manage</div>
+   <img src="assets/images__3_-removebg-preview.png">
+</section>
+<section>
+    <div></div>
+    <div>Settings</div>
+    <img src="assets/images__2_-removebg-preview.png">
+</section>
+</body>
+</html>

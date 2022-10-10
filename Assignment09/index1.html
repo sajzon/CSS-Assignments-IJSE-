@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation-Case2</title>
+    <link href="assets/normalize.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+        main{
+            width: 700px;
+            height: 400px;
+            border: 20px solid grey;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow-x:scroll;
+        }
+        main>section{
+            display: flex;
+            width: 400%;
+            height: 100%;
+            animation-name: slide;
+            animation-duration:10s;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;/* this code line=reverse this content*/
+            position: relative;
+
+        }
+        main>section>div{
+            width: 100%;
+
+        }
+        main>section>div:nth-child(1){
+            background:url("assets/-121610564853gg73ucwrdk.png");
+            background-size: cover;
+            background-position: center;
+        }
+        main>section>div:nth-child(2){
+            background:url("assets/FB_IMG_1626621765794.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        main>section>div:nth-child(3){
+            background:url("assets/FB_IMG_1626621771124.jpg");
+            background-size: cover;
+            background-position: center;
+
+        }
+        main>section>div:nth-child(4){
+            background:url("assets/FB_IMG_1626621757414.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        body>section{
+            position: absolute;
+            width: 100%;
+            height: max-content;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        @keyframes slide {
+            0%,20%{
+                transform: translateX(0);
+            }
+            25%,45%{
+                transform: translateX(-25%);
+            }
+            50%,70%{
+                transform: translateX(-50%);
+            }
+            75%,100%{
+                transform: translateX(-75%);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h1>CSS SLIDER</h1>
+</section>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>
